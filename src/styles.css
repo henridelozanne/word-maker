@@ -3,24 +3,24 @@
 body {
   font-family: 'Fjalla One';
   background-color: white;
+  padding: 0 250px;
 }
 
 #app {
-  margin-top: 30px; 
-  margin-left: 10px; 
+  margin-top: 30px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
-#main {
+.main {
   width: 9  0%;
-  padding: 0 15%; 
   position: relative;
 }
 
 #main-title {
-  text-align: center; 
-  word-break: keep-all; 
-  vertical-align: middle; 
+  text-align: center;
+  word-break: keep-all;
+  vertical-align: middle;
   margin: 0 0;
 }
 
@@ -30,19 +30,19 @@ h1 {
 }
 
 #overline {
-  text-decoration: overline; 
+  text-decoration: overline;
   font-size: 40px;
 }
 
 #underline {
-  text-decoration: underline; 
+  text-decoration: underline;
   font-size: 40px;
 }
 
-#params-section {
-  /* border: 6px solid green; */
+.params-section {
   width: 100%;
-  margin-bottom: -60px
+  margin-bottom: 30px;
+  margin-top: 65px
 }
 
 .disabled-section {
@@ -58,28 +58,27 @@ span {
   min-width: 85px;
 }
 
-#generate-word-section {
+.generate-word-section:not(.top-btns){
   width: 100%;
-  text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 #displayed-word {
   height: 130px;
-  width: 600px;
   margin: auto;
   border: 1px solid black;
   border-radius: 15px;
 }
 
-#saved-words-section {
+.saved-words-section {
   display: block;
-  margin-top: 20px
-  
+  margin-top: 55px
 }
 
 .grey {
   opacity: 0.5 !important;
-  cursor: no-drop !important; 
+  cursor: no-drop !important;
 }
 
 .margin-top {
@@ -95,17 +94,43 @@ span {
   width: 200px !important;
 }
 
-#sliderman {
-  width: 20% !important;
+.el-slider__runway {
+  width: 20px;
   background-color: red !important;
 }
 
 .new-div {
-  background-color: purple !important; 
+  background-color: purple !important;
   width: 20% !important;
 }
 
-.top-buttons {
-  width: 600px;
-  background-color: red;
+.displayed-word-container {
+  margin-bottom: 20px;
+}
+
+.specific-letters-switch {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.letters-wanted-card {
+  margin-top: 35px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.saved-words-ctn {
+  margin: 20px 0;
+}
+
+.delete-btn:hover {
+  background: rgb(255, 112, 112) !important;
+  color: white !important;
+  border-color: rgb(255, 159, 159) !important;
+}
+
+.position-checkboxes-ctn {
+  margin-top: 10px;
 }
